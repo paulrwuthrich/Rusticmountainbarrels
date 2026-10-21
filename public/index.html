@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rustic Mountain Barrels Wholesale</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Barrel stave bar and gift pieces hand crafted in Lynchburg, Tennessee from authentic Tennessee whiskey barrels, made for distillery tasting rooms and gift shops. Download the wholesale catalogue.">
+<meta property="og:title" content="Rustic Mountain Barrels Wholesale">
+<meta property="og:description" content="Barrel stave bar and gift pieces for distillery tasting rooms and gift shops, engraved with your logo.">
+<meta property="og:image" content="img/hero.jpg">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Lora:ital,wght@0,500;0,600;1,400&display=swap">
+<style>
+/* Layout: the catalogue cover becomes the hero (espresso panel + photo), then
+   paper-toned sections that reuse the catalogue's price boxes, hairlines and copper labels. */
+:root{
+  --espresso:#2a211c;   /* cover panel, header, logo band */
+  --espresso-2:#362a23; /* raised surface on espresso */
+  --paper:#faf7f2;      /* catalogue page */
+  --paper-2:#f3ece4;    /* catalogue price box */
+  --ink:#231c18;        /* headings and body */
+  --muted:#6e625a;      /* secondary text */
+  --rule:#ddd2c6;       /* hairlines */
+  --copper:#c17a3a;     /* labels, prices, buttons */
+  --copper-dk:#a8652b;  /* button hover, copper on paper text */
+  --cream:#f2e9dc;      /* text on espresso */
+  --cream-muted:#bfb1a2;
+  --display:"Lora",Georgia,"Times New Roman",serif;
+  --body:"Inter",-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;
+  --gutter:max(16px,env(safe-area-inset-left,0px));
+  --gutter-r:max(16px,env(safe-area-inset-right,0px));
+  color-scheme:light;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:var(--display);font-weight:600;line-height:1.12;margin:0;text-wrap:balance;letter-spacing:-.005em}
+p{margin:0}
+.wrap{max-width:1180px;margin:0 auto;padding-left:max(24px,env(safe-area-inset-left,0px));padding-right:max(24px,env(safe-area-inset-right,0px))}
+.eyebrow{font-family:var(--body);font-size:.75rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--copper)}
+.btn{display:inline-flex;align-items:center;gap:.6em;font-family:var(--body);font-weight:600;font-size:.82rem;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;padding:.95em 1.5em;border-radius:2px;border:1px solid transparent;cursor:pointer;transition:background .15s,color .15s,border-color .15s}
+.btn svg{width:1.1em;height:1.1em;flex:none}
+.btn-copper{background:var(--copper);color:#fff}
+.btn-copper:hover{background:var(--copper-dk)}
+.btn-line{border-color:rgba(242,233,220,.45);color:var(--cream)}
+.btn-line:hover{border-color:var(--cream);background:rgba(242,233,220,.06)}
+:focus-visible{outline:2px solid var(--copper);outline-offset:3px}
+
+/* header */
+.top{background:var(--espresso);color:var(--cream);position:sticky;top:env(safe-area-inset-top,0px);z-index:10;border-bottom:1px solid rgba(242,233,220,.08)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;padding-block:12px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand img{width:40px;height:auto}
+.brand span{font-family:var(--body);font-size:.72rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;line-height:1.35;color:var(--cream)}
+.nav{display:flex;align-items:center;gap:28px}
+.nav a.link{font-size:.78rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;color:var(--cream-muted)}
+.nav a.link:hover{color:var(--cream)}
+.nav .btn{padding:.75em 1.15em}
+@media (max-width:900px){.nav a.link{display:none}}
+@media (max-width:480px){.brand span{display:none}.nav .btn{font-size:.72rem;letter-spacing:.08em}}
+
+/* hero = catalogue cover */
+.hero{background:var(--espresso);color:var(--cream);display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr)}
+.hero-copy{display:flex;flex-direction:column;justify-content:center;gap:22px;padding-block:72px 64px;padding-left:max(24px,env(safe-area-inset-left,0px),calc((100vw - 1180px)/2 + 24px));padding-right:48px}
+.hero-mono{width:150px;height:auto}
+.hero h1{font-size:clamp(2.4rem,4.6vw,3.75rem);color:#fff;font-weight:600}
+.hero .lede{font-size:1.08rem;color:var(--cream-muted);max-width:30em}
+.hero .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:6px}
+.hero .sig{font-family:var(--display);font-style:italic;color:var(--copper);font-size:.98rem}
+.hero-photo{position:relative;min-height:420px}
+.hero-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:35% 50%}
+@media (max-width:860px){
+  .hero{grid-template-columns:1fr}
+  .hero-photo{min-height:0;aspect-ratio:3/2;order:-1}
+  .hero-copy{padding:40px max(24px,env(safe-area-inset-right,0px)) 48px max(24px,env(safe-area-inset-left,0px))}
+  .hero-mono{width:112px}
+}
+
+/* facts strip */
+.facts{border-bottom:1px solid var(--rule);background:var(--paper)}
+.facts ul{list-style:none;margin:0 auto;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));padding-block:0}
+.facts li{padding:22px 20px 22px 0;display:flex;flex-direction:column;gap:2px;font-size:.92rem;color:var(--muted)}
+.facts li+li{padding-left:20px;border-left:1px solid var(--rule)}
+.facts b{font-family:var(--display);font-weight:600;font-size:1.05rem;color:var(--ink)}
+@media (max-width:860px){.facts ul{grid-template-columns:repeat(2,minmax(0,1fr))}.facts li:nth-child(3){padding-left:0;border-left:0}.facts li:nth-child(n+3){border-top:1px solid var(--rule)}}
+@media (max-width:420px){.facts ul{grid-template-columns:1fr}.facts li,.facts li+li{padding-left:0;border-left:0}.facts li+li{border-top:1px solid var(--rule)}}
+
+/* sections */
+section.block{padding-block:88px}
+.head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px 64px;align-items:end;margin-bottom:44px}
+.head h2{font-size:clamp(2rem,3.6vw,2.75rem);margin-top:10px}
+.head p:not(.eyebrow){color:var(--muted);max-width:34em}
+@media (max-width:760px){.head{grid-template-columns:1fr}section.block{padding-block:64px}}
+
+/* collection */
+.cat{display:flex;align-items:baseline;justify-content:space-between;gap:16px;border-bottom:1px solid var(--ink);padding-bottom:10px;margin:56px 0 28px}
+.cat:first-of-type{margin-top:0}
+.cat span{font-size:.82rem;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:40px 28px}
+.grid.two{grid-template-columns:repeat(2,minmax(0,1fr))}
+@media (max-width:960px){.grid,.grid.two{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:600px){.grid,.grid.two{grid-template-columns:1fr}}
+.item{display:flex;flex-direction:column;gap:14px;min-width:0}
+.item figure{margin:0;aspect-ratio:4/3;overflow:hidden;background:var(--espresso);border-radius:2px;max-width:100%}
+.grid.two .item figure{aspect-ratio:16/10}
+.item figure img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+.item:hover figure img{transform:scale(1.03)}
+.item h3{font-size:1.4rem}
+.item .desc{color:var(--muted);font-size:.95rem}
+.specs{display:grid;gap:0;font-size:.88rem;border-top:1px solid var(--rule)}
+.specs div{display:grid;grid-template-columns:7.2em minmax(0,1fr);gap:12px;padding:8px 0;border-bottom:1px solid var(--rule)}
+.specs dt{font-size:.68rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);padding-top:.25em}
+.specs dd{margin:0}
+.price{display:flex;align-items:baseline;justify-content:space-between;gap:12px;background:var(--paper-2);border-left:3px solid var(--copper);padding:12px 16px;margin-top:auto;font-variant-numeric:tabular-nums}
+.price .ws{display:flex;align-items:baseline;gap:8px}
+.price .ws strong{font-family:var(--display);font-size:1.6rem;font-weight:600;color:var(--copper-dk);line-height:1}
+.price .ws small,.price .rt small{font-size:.66rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.price .rt{text-align:right;font-size:.9rem}
+.price .rt b{font-weight:600}
+.price em{font-family:var(--display);font-style:italic;font-weight:600;color:var(--copper-dk);font-size:1.15rem}
+.note{margin-top:40px;color:var(--muted);font-size:.9rem;max-width:52em}
+
+/* your logo band */
+.logo-band{background:var(--espresso);color:var(--cream)}
+.logo-band .wrap{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:56px;align-items:center}
+.logo-band h2{font-size:clamp(2rem,3.6vw,2.75rem);color:#fff;margin:10px 0 18px}
+.logo-band p:not(.eyebrow){color:var(--cream-muted);max-width:32em}
+.logo-band p:not(.eyebrow)+p{margin-top:14px}
+.logo-pics{display:grid;grid-template-columns:minmax(0,1fr);gap:18px}
+.logo-pics figure{margin:0;display:flex;flex-direction:column;gap:8px}
+.logo-pics img{width:100%;height:auto;border-radius:2px}
+.logo-pics figcaption{font-family:var(--display);font-style:italic;font-size:.88rem;color:var(--cream-muted)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.chips span{font-size:.8rem;border:1px solid rgba(242,233,220,.25);padding:.35em .8em;border-radius:2px;color:var(--cream)}
+@media (max-width:860px){.logo-band .wrap{grid-template-columns:1fr;gap:36px}}
+
+/* steps */
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;border-top:1px solid var(--ink)}
+.steps li{padding:26px 28px 6px 0;display:flex;flex-direction:column;gap:10px}
+.steps li+li{padding-left:28px;border-left:1px solid var(--rule)}
+.steps .n{font-family:var(--display);font-size:2.6rem;color:var(--copper);line-height:1}
+.steps h3{font-size:1.3rem}
+.steps p{color:var(--muted);font-size:.95rem}
+@media (max-width:760px){.steps{grid-template-columns:1fr}.steps li,.steps li+li{padding:22px 0;border-left:0}.steps li+li{border-top:1px solid var(--rule)}}
+
+/* catalogue download panel */
+.dl{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:24px 48px;align-items:center;background:var(--paper-2);border-left:3px solid var(--copper);padding:32px 36px;margin-top:56px}
+.dl h3{font-size:1.6rem;margin-bottom:6px}
+.dl p{color:var(--muted)}
+@media (max-width:700px){.dl{grid-template-columns:1fr;padding:26px 22px}}
+
+/* form */
+.form-sec{background:var(--paper-2);border-top:1px solid var(--rule)}
+.form-sec .wrap{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,7fr);gap:56px}
+.form-sec h2{font-size:clamp(2rem,3.6vw,2.75rem);margin:10px 0 16px}
+.form-sec .side p:not(.eyebrow){color:var(--muted)}
+.form-sec .side p:not(.eyebrow)+p{margin-top:14px}
+form{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 20px;background:var(--paper);padding:32px;border:1px solid var(--rule)}
+.f{display:flex;flex-direction:column;gap:6px;min-width:0}
+.f.full{grid-column:1/-1}
+label,.f legend{font-size:.7rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+input,textarea{font:inherit;font-size:1rem;color:var(--ink);background:#fff;border:1px solid var(--rule);border-radius:2px;padding:.7em .8em;width:100%}
+input:focus,textarea:focus{outline:none;border-color:var(--copper);box-shadow:0 0 0 3px rgba(193,122,58,.18)}
+textarea{min-height:120px;resize:vertical}
+fieldset{border:0;margin:0;padding:0;min-width:0}
+.f legend{padding:0;margin-bottom:8px}
+.checks{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px 18px}
+.checks label{display:flex;align-items:center;gap:10px;font-size:.92rem;font-weight:400;letter-spacing:0;text-transform:none;color:var(--ink);cursor:pointer}
+.checks input{width:18px;height:18px;accent-color:var(--copper);flex:none}
+.submit-row{grid-column:1/-1;display:flex;flex-wrap:wrap;align-items:center;gap:16px}
+.submit-row .btn{border:0}
+.status{font-size:.92rem;color:var(--muted)}
+.status.ok{color:#3f6b3a}
+.status.err{color:#a2392b}
+.hp{position:absolute;left:-9999px}
+@media (max-width:860px){.form-sec .wrap{grid-template-columns:1fr;gap:32px}}
+@media (max-width:560px){form{grid-template-columns:1fr;padding:22px}.checks{grid-template-columns:1fr}}
+
+/* footer */
+footer{background:var(--espresso);color:var(--cream-muted);font-size:.85rem}
+footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px;padding-block:36px}
+footer .brand img{width:36px}
+footer .sig{font-family:var(--display);font-style:italic;color:var(--copper)}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Rustic Mountain Barrels, back to top">
+      <img src="img/mark-cream.png" alt="" width="40" height="37">
+      <span>Rustic Mountain<br>Barrels · Wholesale</span>
+    </a>
+    <nav class="nav" aria-label="Page sections">
+      <a class="link" href="#collection">Collection</a>
+      <a class="link" href="#your-logo">Your logo</a>
+      <a class="link" href="#how">How it works</a>
+      <a class="link" href="#pricing">Request pricing</a>
+      <a class="btn btn-copper" href="Rustic_Mountain_Barrels_Wholesale_Catalogue.pdf" download>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 20h14"/></svg>Catalogue
+      </a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero-copy">
+    <p class="eyebrow">Wholesale for distilleries</p>
+    <h1 id="hero-title">Barrel Stave Bar &amp; Gift Collection</h1>
+    <p class="lede">Small goods hand crafted from authentic Tennessee whiskey barrels, made to be sold in your tasting room and gift shop, and engraved with your distillery's logo.</p>
+    <div class="actions">
+      <a class="btn btn-copper" href="Rustic_Mountain_Barrels_Wholesale_Catalogue.pdf" download>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 20h14"/></svg>Download the catalogue
+      </a>
+      <a class="btn btn-line" href="#pricing">Request wholesale pricing</a>
+    </div>
+    <p class="sig">Lynchburg, Tennessee · Hand crafted · Custom engraving available</p>
+  </div>
+  <div class="hero-photo">
+    <img src="img/hero.jpg" alt="Barrel stave cigar server holding a Glencairn glass and a cigar, engraved with a logo" width="1536" height="1024">
+  </div>
+</section>
+
+<div class="facts">
+  <ul class="wrap">
+    <li><b>Authentic barrels</b>Every piece is cut from a Tennessee whiskey barrel.</li>
+    <li><b>Lynchburg, TN</b>Hand crafted in our shop, one piece at a time.</li>
+    <li><b>Your logo</b>Engraved into the oak on any piece in the line.</li>
+    <li><b>2× or better</b>Suggested retail is at least double wholesale on every priced piece.</li>
+  </ul>
+</div>
+
+<section class="block" id="collection" aria-labelledby="col-title">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <p class="eyebrow">The collection</p>
+        <h2 id="col-title">Eleven pieces built for the tasting room shelf</h2>
+      </div>
+      <p>Prices are wholesale, per unit, with our suggested retail beside them. The full catalogue has every option and more photos of each piece.</p>
+    </div>
+
+    <div class="cat"><p class="eyebrow">Bar &amp; drinkware</p><span>6 pieces</span></div>
+    <div class="grid">
+      <article class="item">
+        <figure><img src="img/cigar.jpg" alt="Cigar server with Glencairn glass and cigar" loading="lazy" width="1000" height="667"></figure>
+        <h3>Cigar Server</h3>
+        <p class="desc">A barrel-stave rest with a cigar notch and a glass well, so a pour and a cigar sit side by side.</p>
+        <dl class="specs"><div><dt>Size</dt><dd>3" or 4" wide × approx. 10" long</dd></div><div><dt>Options</dt><dd>Standard, with ash tray, or ash tray + shot glass · Blank available · Toe or no toe</dd></div></dl>
+        <div class="price"><span class="ws"><strong>$15</strong><small>Wholesale</small></span><span class="rt"><small>Retail</small> <b>$40</b></span></div>
+      </article>
+      <article class="item">
+        <figure><img src="img/shot.jpg" alt="Shot glass server with one shot glass" loading="lazy" width="1000" height="667"></figure>
+        <h3>Shot Glass Server</h3>
+        <p class="desc">A tasting flight for shot glasses, cut from a single barrel stave.</p>
+        <dl class="specs"><div><dt>Size</dt><dd>6" × 2" (1 glass) · up to 15" long (4 glasses)</dd></div><div><dt>Options</dt><dd>1 to 4 glass holes · Toe or no toe</dd></div></dl>
+        <div class="price"><span class="ws"><strong>$12</strong><small>Wholesale</small></span><span class="rt"><small>Retail</small> <b>$30</b></span></div>
+      </article>
+      <article class="item">
+        <figure><img src="img/glencairn.jpg" alt="Glencairn glass server with three glass wells" loading="lazy" width="1000" height="667"></figure>
+        <h3>Glencairn Glass Server</h3>
+        <p class="desc">A barrel-stave flight board sized for Glencairn whisky glasses.</p>
+        <dl class="specs"><div><dt>Size</dt><dd>7.5" × 2.75" (1 glass) · adds 3" per glass, up to 22.5"</dd></div><div><dt>Options</dt><dd>1 to 6 glass holes · Logo at end, in middle, or etched only · Toe or no toe</dd></div></dl>
+        <div class="price"><span class="ws"><strong>$12</strong><small>Wholesale</small></span><span class="rt"><small>Retail</small> <b>$30–45</b></span></div>
+      </article>
+      <article class="item">
+        <figure><img src="img/wine.jpg" alt="Wine display glass holder with a bottle and two hanging glasses" loading="lazy" width="1000" height="667"></figure>
+        <h3>Wine Display Glass Holder</h3>
+        <p class="desc">A barrel stave that holds a bottle and hangs two stemmed glasses by their bases.</p>
+        <dl class="specs"><div><dt>Size</dt><dd>4" × 15"</dd></div><div><dt>Options</dt><dd>Engraved or plain</dd></div></dl>
+        <div class="price"><span class="ws"><strong>$12</strong><small>Wholesale</small></span><span class="rt"><small>Retail</small> <b>$40</b></span></div>
+      </article>
+      <article class="item">
+        <figure><img src="img/bottle.jpg" alt="Standing barrel stave with a cradle holding a whiskey bottle" loading="lazy" width="1000" height="721"></figure>
+        <h3>Whiskey Bottle Display Holder</h3>
+        <p class="desc">A standing barrel stave with a cradle that holds a single whiskey bottle on display.</p>
+        <dl class="specs"><div><dt>Size</dt><dd>Contact us</dd></div><div><dt>Options</dt><dd>Contact us</dd></div></dl>
+        <div class="price"><span class="ws"><em>Contact us</em><small>Pricing</small></span><span class="rt"><small>Retail</small> <b>Contact us</b></span></div>
+      </article>
+      <article class="item">
+        <figure><img src="img/opener.jpg" alt="Wall-mount bottle opener on a barrel stave board" loading="lazy" width="1000" height="667"></figure>
+        <h3>Large Bottle Opener</h3>
+        <p class="desc">A wall-mount barrel-stave board fitted with a cast opener.</p>
+        <dl class="specs"><div><dt>Size</dt><dd>3" × 10"</dd></div><div><dt>Options</dt><dd>Opener in bronze or cast iron</dd></div></dl>
+        <div class="price"><span class="ws"><strong>$15</strong><small>Wholesale</small></span><span class="rt"><small>Retail</small> <b>$30</b></span></div>
+      </article>
+    </div>
+
+    <div class="cat"><p class="eyebrow">Desk &amp; entryway</p><span>3 pieces</span></div>
+    <div class="grid">
+      <article class="item">
+        <figure><img src="img/card.jpg" alt="Business card holder cut from a barrel stave" loading="lazy" width="1000" height="667"></figure>
+        <h3>Card Holder</h3>
+        <p class="desc">A business-card stand cut from a barrel stave, with the charred inside or the engraved oak facing out.</p>
+        <dl class="specs"><div><dt>Size</dt><dd>Contact us</dd></div><div><dt>Options</dt><dd>Char side or logo side · Toe or no toe</dd></div></dl>
+        <div class="price"><span class="ws"><strong>$9</strong><small>Wholesale</small></span><span class="rt"><small>Retail</small> <b>$18</b></span></div>
+      </article>
+      <article class="item">
+        <figure><img src="img/pen.jpg" alt="Barrel stave pen holder block with engraved logo" loading="lazy" width="1000" height="666"></figure>
+        <h3>Pencil / Pen Holder</h3>
+        <p class="desc">A barrel-stave desk block drilled to hold pens.</p>
+        <dl class="specs"><div><dt>Size</dt><dd>Contact us</dd></div><div><dt>Options</dt><dd>Char side or logo side · Toe or no toe</dd></div></dl>
+        <div class="price"><span class="ws"><strong>$9</strong><small>Wholesale</small></span><span class="rt"><small>Retail</small> <b>$18</b></span></div>
+      </article>
+      <article class="item">
+        <figure><img src="img/coat.jpg" alt="Vertical barrel stave with one coat hook" loading="lazy" width="1000" height="666"></figure>
+        <h3>Vertical Single Coat Hanger</h3>
+        <p class="desc">A single barrel stave mounted vertically with one coat hook.</p>
+        <dl class="specs"><div><dt>Size</dt><dd>Contact us</dd></div><div><dt>Options</dt><dd>Logo or no logo · Toe or no toe</dd></div></dl>
+        <div class="price"><span class="ws"><strong>$15</strong><small>Wholesale</small></span><span class="rt"><small>Retail</small> <b>$30</b></span></div>
+      </article>
+    </div>
+
+    <div class="cat"><p class="eyebrow">Wall decor</p><span>2 pieces</span></div>
+    <div class="grid two">
+      <article class="item">
+        <figure><img src="img/wallart.jpg" alt="Barrel stave wall art engraved with a stagecoach and horses" loading="lazy" width="1000" height="666"></figure>
+        <h3>Barrel Stave Wall Art</h3>
+        <p class="desc">Barrel staves joined with their original steel band and engraved with artwork or a logo.</p>
+        <dl class="specs"><div><dt>Size</dt><dd>22" or 30" long × 7–10" wide · 5–8 lbs</dd></div><div><dt>Options</dt><dd>With logo or with two hooks · 22" or 30" length</dd></div></dl>
+        <div class="price"><span class="ws"><em>Contact us</em><small>Pricing</small></span><span class="rt"><small>Retail</small> <b>$122</b></span></div>
+      </article>
+      <article class="item">
+        <figure><img src="img/head.jpg" alt="Banded barrel head engraved with a stag and pine trees" loading="lazy" width="1000" height="666"></figure>
+        <h3>Banded Barrel Head</h3>
+        <p class="desc">The head of a whiskey barrel kept in its original steel band, sanded, finished and engraved.</p>
+        <dl class="specs"><div><dt>Size</dt><dd>22" round × 2.25" thick · 15–20 lbs</dd></div><div><dt>Options</dt><dd>Logo or no logo</dd></div></dl>
+        <div class="price"><span class="ws"><strong>$45</strong><small>Wholesale</small></span><span class="rt"><small>Retail</small> <b>$142.50</b></span></div>
+      </article>
+    </div>
+
+    <p class="note">Every piece is cut from authentic Tennessee whiskey barrels, so grain, char and color vary from piece to piece. Logo engraving shown in photos is a sample; pieces can be engraved with your distillery's logo.</p>
+  </div>
+</section>
+
+<section class="block logo-band" id="your-logo" aria-labelledby="logo-title">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Your logo</p>
+      <h2 id="logo-title">Your distillery's mark, engraved into the oak</h2>
+      <p>Send us your logo and we engrave it into each piece before it ships. A guest takes home a cigar server or a flight board that came out of a whiskey barrel and carries your name.</p>
+      <p>Most pieces can also be ordered plain, or with the charred inside of the stave facing out.</p>
+      <div class="chips" aria-label="Engraving options">
+        <span>Logo or no logo</span><span>Char side or logo side</span><span>Logo at end or middle</span><span>Toe or no toe</span>
+      </div>
+    </div>
+    <div class="logo-pics">
+      <figure><img src="img/cigar-logo.jpg" alt="Cigar server engraved with 'Your Logo Here'" width="1000" height="667"><figcaption>Cigar server, logo placement</figcaption></figure>
+      <figure><img src="img/card-logo.jpg" alt="Card holder engraved with 'Your Logo Here'" width="1000" height="667"><figcaption>Card holder, logo side</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="how" aria-labelledby="how-title">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <p class="eyebrow">How wholesale works</p>
+        <h2 id="how-title">From catalogue to your gift shop</h2>
+      </div>
+      <p>Every order is made for you in Lynchburg, so we confirm the details with you before we cut.</p>
+    </div>
+    <ol class="steps">
+      <li><span class="n">1</span><h3>Pick your pieces</h3><p>Download the catalogue and choose pieces, sizes and options for your shop.</p></li>
+      <li><span class="n">2</span><h3>Send your logo and quantities</h3><p>Use the form below to tell us what you want. We'll ask for your logo file when we reply.</p></li>
+      <li><span class="n">3</span><h3>We build and ship</h3><p>We confirm pricing and timing, then cut, finish and engrave each piece by hand and ship it to you.</p></li>
+    </ol>
+
+    <div class="dl">
+      <div>
+        <h3>Wholesale catalogue</h3>
+        <p>13 pages · every piece with photos, dimensions, options, wholesale and suggested retail. PDF, about 11 MB.</p>
+      </div>
+      <a class="btn btn-copper" href="Rustic_Mountain_Barrels_Wholesale_Catalogue.pdf" download>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 20h14"/></svg>Download PDF
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="block form-sec" id="pricing" aria-labelledby="form-title">
+  <div class="wrap">
+    <div class="side">
+      <p class="eyebrow">Request pricing</p>
+      <h2 id="form-title">Start a wholesale order</h2>
+      <p>Tell us about your distillery and what you'd like to carry. We'll reply with pricing for your quantities, pricing on the pieces marked "Contact us," and timing.</p>
+      <p>Hand crafted in Lynchburg, Tennessee.</p>
+    </div>
+
+    <form id="inquiry" action="https://formspree.io/f/xoejolkv" method="POST" novalidate>
+      <div class="f"><label for="f-name">Your name</label><input id="f-name" name="name" autocomplete="name" required></div>
+      <div class="f"><label for="f-distillery">Distillery</label><input id="f-distillery" name="distillery" autocomplete="organization" required></div>
+      <div class="f"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
+      <div class="f"><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel"></div>
+      <div class="f full"><label for="f-location">City and state</label><input id="f-location" name="location" autocomplete="address-level2"></div>
+      <fieldset class="f full">
+        <legend>Pieces you're interested in</legend>
+        <div class="checks">
+          <label><input type="checkbox" id="p-cigar" name="pieces" value="Cigar Server">Cigar Server</label>
+          <label><input type="checkbox" id="p-shot" name="pieces" value="Shot Glass Server">Shot Glass Server</label>
+          <label><input type="checkbox" id="p-glencairn" name="pieces" value="Glencairn Glass Server">Glencairn Glass Server</label>
+          <label><input type="checkbox" id="p-wine" name="pieces" value="Wine Display Glass Holder">Wine Display Glass Holder</label>
+          <label><input type="checkbox" id="p-bottle" name="pieces" value="Whiskey Bottle Display Holder">Whiskey Bottle Display Holder</label>
+          <label><input type="checkbox" id="p-opener" name="pieces" value="Large Bottle Opener">Large Bottle Opener</label>
+          <label><input type="checkbox" id="p-card" name="pieces" value="Card Holder">Card Holder</label>
+          <label><input type="checkbox" id="p-pen" name="pieces" value="Pencil / Pen Holder">Pencil / Pen Holder</label>
+          <label><input type="checkbox" id="p-coat" name="pieces" value="Vertical Single Coat Hanger">Vertical Single Coat Hanger</label>
+          <label><input type="checkbox" id="p-wallart" name="pieces" value="Barrel Stave Wall Art">Barrel Stave Wall Art</label>
+          <label><input type="checkbox" id="p-head" name="pieces" value="Banded Barrel Head">Banded Barrel Head</label>
+        </div>
+      </fieldset>
+      <div class="f full"><label for="f-notes">Quantities and notes</label><textarea id="f-notes" name="notes" placeholder="For example: 50 Glencairn servers with 3 glass holes and our logo at the end, 25 bottle openers in cast iron."></textarea></div>
+      <input class="hp" type="text" id="f-company-url" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <div class="submit-row">
+        <button class="btn btn-copper" type="submit" id="f-submit">Send request</button>
+        <p class="status" id="f-status" role="status" aria-live="polite"></p>
+      </div>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <a class="brand" href="#top"><img src="img/mark-cream.png" alt="" width="36" height="33"><span>Rustic Mountain<br>Barrels</span></a>
+    <p class="sig">Hand crafted in Lynchburg, Tennessee from authentic Tennessee whiskey barrels.</p>
+    <p>© 2026 Rustic Mountain Barrels</p>
+  </div>
+</footer>
+
+<script>
+/* Wholesale inquiry form, sent to Formspree in the background so the
+   visitor stays on the page. If JavaScript is off, the form's action
+   attribute posts to the same endpoint as a normal form. */
+const FORM_ENDPOINT = "https://formspree.io/f/xoejolkv";
+
+(function(){
+  const form = document.getElementById('inquiry');
+  const status = document.getElementById('f-status');
+  const btn = document.getElementById('f-submit');
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    status.className = 'status';
+    const missing = ['f-name','f-distillery','f-email'].filter(id => !document.getElementById(id).value.trim());
+    const email = document.getElementById('f-email');
+    if (missing.length) { status.textContent = 'Please fill in your name, distillery and email.'; status.classList.add('err'); document.getElementById(missing[0]).focus(); return; }
+    if (!email.checkValidity()) { status.textContent = 'That email address doesn’t look complete.'; status.classList.add('err'); email.focus(); return; }
+    btn.disabled = true; status.textContent = 'Sending…';
+    let res;
+    try {
+      const data = new FormData(form);
+      data.set('pieces', data.getAll('pieces').join(', ') || 'None selected');
+      data.set('_subject', 'Wholesale request: ' + (data.get('distillery') || ''));
+      res = await fetch(FORM_ENDPOINT, { method: 'POST', body: data, headers: { 'Accept': 'application/json' } });
+    } catch (err) {
+      status.textContent = 'The request didn’t go through. Check your connection and try again.'; status.classList.add('err');
+      btn.disabled = false; return;
+    }
+    if (res.ok) {
+      form.reset();
+      status.textContent = 'Request sent. We’ll reply by email.'; status.classList.add('ok');
+    } else {
+      // Formspree returns {errors:[{message, field}]} when it rejects a submission
+      let msg = 'The request didn’t go through. Please try again, or email us directly.';
+      try { const j = await res.json(); if (j && j.errors && j.errors.length) msg = j.errors.map(x => x.message).join(' '); } catch (_) {}
+      status.textContent = msg; status.classList.add('err');
+    }
+    btn.disabled = false;
+  });
+})();
+</script>
+</body>
+</html>
