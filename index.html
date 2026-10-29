@@ -54,14 +54,15 @@ p{margin:0}
 :focus-visible{outline:2px solid var(--copper);outline-offset:3px}
 
 /* header */
-.top{background:var(--espresso);color:var(--cream);position:sticky;top:env(safe-area-inset-top,0px);z-index:10;border-bottom:1px solid rgba(242,233,220,.08)}
+.top{background:var(--paper-2);color:var(--espresso);position:sticky;top:env(safe-area-inset-top,0px);z-index:10;border-bottom:1px solid var(--rule)}
 .top .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;padding-block:12px}
 .brand{display:flex;align-items:center;gap:12px;text-decoration:none}
-.brand img{width:40px;height:auto}
+.brand img{width:58px;height:auto}
 .brand span{font-family:var(--body);font-size:.72rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;line-height:1.35;color:var(--cream)}
 .nav{display:flex;align-items:center;gap:28px}
-.nav a.link{font-size:.78rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;color:var(--cream-muted)}
-.nav a.link:hover{color:var(--cream)}
+.nav a.link{font-size:.78rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;color:var(--muted)}
+.nav a.link:hover{color:var(--espresso)}
+.top .brand span{color:var(--espresso)}
 .nav .btn{padding:.75em 1.15em}
 @media (max-width:900px){.nav a.link{display:none}}
 @media (max-width:480px){.brand span{display:none}.nav .btn{font-size:.72rem;letter-spacing:.08em}}
@@ -186,8 +187,19 @@ fieldset{border:0;margin:0;padding:0;min-width:0}
 /* footer */
 footer{background:var(--espresso);color:var(--cream-muted);font-size:.85rem}
 footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px;padding-block:36px}
-footer .brand img{width:36px}
+footer .brand img{width:52px}
 footer .sig{font-family:var(--display);font-style:italic;color:var(--copper)}
+
+/* distilleries we work with */
+.partners{background:var(--paper);border-top:1px solid var(--rule)}
+.partners .wrap{padding-block:30px 34px;text-align:center}
+.partners .eyebrow{color:var(--muted)}
+.partners ul{list-style:none;margin:20px 0 0;padding:0;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:28px 56px}
+.partners li{display:flex;align-items:center}
+.partners img{width:auto;opacity:.78}
+.partners .w{height:40px}
+.partners .t{height:52px}
+@media (max-width:640px){.partners ul{gap:22px 36px}.partners .w{height:30px}.partners .t{height:42px}}
 </style>
 </head>
 <body>
@@ -195,7 +207,7 @@ footer .sig{font-family:var(--display);font-style:italic;color:var(--copper)}
 <header class="top">
   <div class="wrap">
     <a class="brand" href="#top" aria-label="Rustic Mountain Barrels, back to top">
-      <img src="img/mark-cream.png" alt="" width="40" height="37">
+      <img src="img/logo-barrel-dark.png" alt="" width="58" height="48">
       <span>Rustic Mountain<br>Barrels · Wholesale</span>
     </a>
     <nav class="nav" aria-label="Page sections">
@@ -428,11 +440,24 @@ footer .sig{font-family:var(--display);font-style:italic;color:var(--copper)}
   </div>
 </section>
 
+<section class="partners" aria-labelledby="partners-title">
+  <div class="wrap">
+    <p class="eyebrow" id="partners-title">Distilleries we work with</p>
+    <ul>
+      <li><img class="w" src="img/distilleries/high-west.png" alt="High West Distillery" width="434" height="96"></li>
+      <li><img class="w" src="img/distilleries/casey-jones.png" alt="Casey Jones Distillery" width="361" height="72"></li>
+      <li><img class="t" src="img/distilleries/old-glory.png" alt="Old Glory Distilling Co." width="114" height="84"></li>
+      <li><img class="t" src="img/distilleries/green-brier.png" alt="Nelson's Green Brier Distillery" width="175" height="94"></li>
+      <li><img class="t" src="img/distilleries/big-machine.png" alt="Big Machine Distillery (Borchetta Spirits)" width="93" height="93"></li>
+    </ul>
+  </div>
+</section>
+
 </main>
 
 <footer>
   <div class="wrap">
-    <a class="brand" href="#top"><img src="img/mark-cream.png" alt="" width="36" height="33"><span>Rustic Mountain<br>Barrels</span></a>
+    <a class="brand" href="#top"><img src="img/logo-barrel-cream.png" alt="" width="52" height="43"><span>Rustic Mountain<br>Barrels</span></a>
     <p class="sig">Hand crafted in Lynchburg, Tennessee from authentic Tennessee whiskey barrels.</p>
     <p>© 2026 Rustic Mountain Barrels</p>
   </div>
